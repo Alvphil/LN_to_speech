@@ -10,7 +10,7 @@ import (
 
 type siteUrl struct {
 	domain   string
-	callback func(url string) error
+	callback func(url string) (string, error)
 }
 
 func getCommands() map[string]siteUrl {
